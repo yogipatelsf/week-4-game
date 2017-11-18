@@ -1,3 +1,32 @@
 body {
     background-image: url(../images/wild_oliva.png);
 }
+
+ol {
+	color: white;
+	font-size: 24px;
+}
+
+div.a {
+position:fixed;
+}
+
+div.b {
+position:fixed;
+}
+
+div.c {
+position:fixed;
+}
+
+div.d {
+position:fixed;   
+}
+
+.container {
+	height: 100%;
+}
+
+html, body {
+    height:100%;
+}

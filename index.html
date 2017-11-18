@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<title>CrystalsCollectors Game</title>
 </head>
 <body>
-	<h1>Crystal Collector</h1>
-<p>You will be given a random number at the start of the game.</p>
 <br>
-<p>There are four crystals below.  By clicking on a crystal you will add a specifc amount of points to your total score.</p>
 <br>
-<p>You win the game by matching your total score to the random number.</p>
+<div class="col-sm-4">
+    <div class="panel panel-default">
+        <h3>Target Number</h3>
+        <br>
+        <span id="target" style="font-size: 24px"></span>
+	</div>
+</div>
+       
+<div class="col-sm-4">
+            <div class="panel panel-default">
+                    	<h3>Wins:  <span id="wins" style="font-size: 24px"></span></h3> 
+	        			<h3>Losses:  <span id="losses" style="font-size: 24px"></span>
+	        			<span id="result"></span></h3> 
+            </div>
+        </div>
+<div class="col-sm-4">
+            <div class="panel panel-default">
+                		<h3>Actual Number</h3>
+                		<br>
+                    		<span id="actual" style="font-size: 24px"></span>
+            </div>
+        </div>
+
 <br>
-<p>The value of each crystal is hidden from you until you clcik on it.</p>
 <br>
-<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	<div class="row">
+		<div class="col-md-12">
+		<h1 style="color: white; text-align: center;">No CSS Love  'Catch The Crystal' Collector</h1>
+		</div>
+	</div>
+
+
+<div class="container">
+<!-- 	<div class="row">
+		<div class="col-md-12"> -->
+<br>
+<br>
+<br>
+<br>
+		<ol>
+		  <li>You will be given a random number at the start of the game.</li>
+		  <li>There are four crystals below.  By clicking on a crystal you will add a specifc amount of points to your total score.</li>
+		  <li>You win the game by matching your total score to the random number.</li>
+		  <li>The value of each crystal is hidden from you until you click on it.</li>
+		  <li>Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol> 
+
+<!-- 	<div class="row">
+			<div class="col-md-12"> -->
+				<div id="crystal1" class='a'><img src="assets/images/Unknown.jpg" alt="crystals" height="100" width="100"></div>
+				<br>
+				<div id="crystal2" class='b'><img src="assets/images/Unknown1.jpg" alt="crystals" height="100" width="100"></div>
+				<br>
+				<div id="crystal3" class='c'><img src="assets/images/Unknown2.jpg" alt="crystals" height="100" width="100"></div>
+				<br>
+				<div id="crystal4" class='d'><img src="assets/images/Unknown3.jpg" alt="crystals"  height="100" width="100"></div>	
+			<!-- </div>
+		</div> -->
+	</div>
+</div>
+
 
 
 </body>
 
-<script type="text/javascript">
-
-     $(".letter-button").on("click", function() {
-        var fridgeMagnet = $("<div>");
-        fridgeMagnet.addClass('letter fridge-color')
-        fridgeMagnet.text($(this).attr("data-letter"));
-        $("#display").append(fridgeMagnet);
-      });
-
-
-
- // Here we created an on-click event that responds to button clicks of the crystal image.
-  $(".crystal-image").on("click", function() {
-
-    // Clicking the button triggers an alert message.
-    alert("You clicked a crystal!");
-
-  });
-
-	
-
-
-
-
-</script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+<script type="text/javascript" src="assets/javascript/anime.js"></script>
 
 
 
